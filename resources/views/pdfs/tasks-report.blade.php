@@ -42,7 +42,7 @@
                     {{ $task->created_at }}
                 </th>
                 <th style="width: 20%; overflow-wrap: anywhere">
-                    {{ $task->time_spent_hours }} : {{ $task->time_spent_minutes }}
+                    {{ $task->time_spent_hours ?? 0 }}:{{ $task->time_spent_minutes ?? 0 }}
                 </th>
             </tr>
         @endforeach

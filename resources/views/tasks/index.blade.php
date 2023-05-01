@@ -89,7 +89,7 @@
                                         {{ $task->deadline }}
                                     </td>
                                     <td class="px-6 py-4">
-                                        {{ $task->time_spent_hours }} h {{ $task->time_spent_minutes }} min
+                                        {{ $task->time_spent_hours ?? 0 }}:{{ $task->time_spent_minutes ?? 0 }}
                                     </td>
                                     <td class="px-6 py-4 flex justify-between">
                                         <a href="{{ route('tasks.edit', $task) }}"
